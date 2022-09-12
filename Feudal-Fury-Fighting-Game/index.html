@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Feuding Fury</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container Div -->
+    <div id="main-container">
+        <div id="ui-container">
+            <!-- Player Health -->
+            <div id="player-box">
+                <div id="player-health"></div>
+                <div id="max-hp1"></div>
+                <div id="p1NameBox">
+                    <div class="name">Yojimbo</div>
+                </div>
+            </div>
+
+            <!-- Timer -->
+            <div id="timer">10</div>
+
+            <!-- Enemy Health -->
+            <div id="enemy-box">
+                <div id="max-hp2"></div>
+                <div id="enemy-health"></div>
+                <div id="p2NameBox">
+                    <div class="name">Oni Tengu</div>
+                </div>
+            </div>  
+        </div>  
+
+        <div id="result"></div>
+
+        <canvas></canvas>
+
+    </div>
+    
+    <section id="bottom-section">
+        <div class="controls">
+            <h1>Yojimbo</h1>
+                <div>
+                    <p>A W D to Move</p>
+                    <p>Spacebar to Attack</p>
+                </div>
+        </div>
+
+        <div id="reset">
+            <!-- <button>Reset</button>
+            <p>(Not yet implemented)</p> -->
+        </div>
+
+        <div class="controls">
+            <h1>Oni Tengu</h1>
+                <div>
+                    <p>← ↑ → to Move</p>
+                    <p>Backspace to Attack</p>
+                </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+
+

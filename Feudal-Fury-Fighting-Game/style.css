@@ -1,0 +1,157 @@
+* {
+    margin: auto;
+    align-content: center;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: black;
+    font-family: 'Trade Winds', cursive;
+}
+
+#main-container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    width: 1024px;
+    height: 568px;
+    border-radius: 10px;
+    outline: rgba(0, 0, 0, 0.75) 15px solid;
+}
+
+#ui-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: none;
+    
+}
+
+
+#timer {
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: blanchedalmond;
+    border: solid 5px white;
+    outline: solid 5px black;
+    font-size: 40px;
+    text-shadow: #202020 3px 3px;
+    z-index: 1000;
+}
+
+#player-box, #enemy-box {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    border-radius: 30%;
+}
+
+#player-box {
+    display: flex;
+    justify-content: right;
+}
+
+
+#player-health, #enemy-health, #max-hp1, #max-hp2 {
+    border: solid 3px white;
+    outline: solid 5px black;
+}
+
+
+#player-health, #enemy-health {
+    background-color: red; 
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    z-index: 100;
+    
+    justify-content: right;
+}
+
+#player-health, #max-hp1 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#enemy-health, #max-hp2 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+#max-hp1, #max-hp2 {
+    background-color: rgba(100, 0, 0, 0.5);
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 10
+}
+
+#p1NameBox, #p2NameBox {
+    height: 30px;
+    z-index: 500;
+    display: flex;
+    padding-top: 45px;
+}
+
+
+.name {
+    height: 30px;
+    width: 200px;
+    padding-top: 2px;
+    z-index: 1200;
+    color: blanchedalmond;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    outline: black solid 2px;
+}
+
+#result {
+    position: absolute;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+
+    color:  blanchedalmond;
+    font-size: 50px;
+    text-shadow: #202020 3px 3px;
+    background: transparent;
+
+    display: none;
+}
+
+
+#bottom-section{
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 1100px;
+    color: blanchedalmond;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h1 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid blanchedalmond 2px;
+}
+
+.controls div p {
+    padding-top: 10px;
+}
